@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenzr</title>
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.10/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+  <script src="./assets/js/index.js" defer></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="loading">
+      <div class="loading-bg"></div>
+      <div class="content">
+        <div class="simbol">
+          <img src="./assets/images/simbol.svg" alt class="simbol-img">
+        </div>
+        <div class="text-wrap">
+          <div class="text-hidden">
+            <span class="text">Carpal tunnel</span>
+          </div>
+          <div class="text-hidden">
+            <span class="text">Tendonitis</span>
+          </div>
+          <div class="text-hidden">
+            <span class="text">Tennis elbow</span>
+          </div>
+          <div class="text-hidden">
+            <span class="text">And more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="header">
+      <div class="inner">
+        <h1 class="header-logo">
+          <img src="./assets/images/logo.svg" alt="tenzr" class="logo">
+        </h1>
+        <div class="header-wrap">
+          <nav id="gnb">
+            <ul class="gnb-list">
+              <li class="gnb-item"><a href="" class="gnb-link">For providers</a></li>
+              <li class="gnb-item"><a href="" class="gnb-link">For patients</a></li>
+              <li class="gnb-item"><a href="" class="gnb-link">Our plans</a></li>
+              <li class="gnb-item"><a href="" class="gnb-link">Modules</a></li>
+              <li class="gnb-item"><a href="" class="gnb-link">Test Modular</a></li>
+            </ul>
+          </nav>
+          <a href="" class="go-link">
+            <span class="link-text-wrapper hidden">
+              <span class="link-text over">Start now</span>
+              <span class="link-text under">Start now</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main id="container">
+      <section class="sc-visual">
+        <div class="inner">
+          <h2 class="headline">
+            <span class="split-hidden">
+              <span class="split-text">Reach the</span>
+            </span>
+            <span class="split-hidden">
+              <span class="split-text">fullest possible</span>
+            </span>
+            <span class="split-hidden">
+              <span class="split-text">recovery</span>
+            </span>
+          </h2>
+        </div>
+        <div class="bg-wrap">
+          <img src="./assets/images/visual.jpg" alt class="visual-bg">
+          <a href="" class="scroll-btn"><img src="./assets/images/icon_arrow.svg" alt="아래 내용으로 이동" class="ic-arrow"></a>
+        </div>
+      </section>
+      <section class="sc-intro">
+        <h2 class="blind">intro</h2>
+        <div class="sequence-wrapper">
+          <div class="sequence">
+            <div class="sequence-images"></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-wrap">
+            <img src="./assets/images/hand.png" alt class="hand-img">
+          </div>
+          <div class="text-wrap">
+            <p class="text intro-split-wrap">
+              <span class="intro-split-hidden hidden">
+                <span class="intro-split-text">Tenzr is the only digital therapy</span>
+              </span>
+              <span class="intro-split-hidden hidden">
+                <span class="intro-split-text">kit that assesses and retrains</span>
+              </span>
+              <span class="intro-split-hidden hidden">
+                <span class="intro-split-text">movement, guides rehabilitation,</span>
+              </span>
+              <span class="intro-split-hidden hidden">
+                <span class="intro-split-text">and measures progress.</span>
+              </span>
+            </p>
+            <p class="desc">Across all 5 dimensions of a full recovery.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sc-reason">
+        <div class="inner">
+          <div class="content">
+            <div class="text-wrap">
+              <strong class="title split-wrap">
+                <span class="split-hidden">
+                  <span class="split-text">Retrain healthy</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">movement</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">patterns</span>
+                </span>
+              </strong>
+              <p class="more-text">Practice moving correctly with Tenzr's guided and gamified rehab exercises. Gain strength, resilience, and relief from painful symptoms. Find certainty in movement for optimal health.</p>
+              <button class="btn-more">
+                <div class="more-icon"><img src="./assets/images/icon_plus.svg" alt="더보기" class="icon-img"></div>
+                <span class="text">Explore details</span>
+              </button>
+            </div>
+            <div class="video-wrap">
+              <video src="./assets/videos/reason1.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="content reverse">
+            <div class="text-wrap">
+              <strong class="title split-wrap">
+                <span class="split-hidden">
+                  <span class="split-text">Measure all</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">aspects of joint</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">health</span>
+                </span>
+              </strong>
+              <p class="more-text">Tenzr Health precisely measures strength, endurance, proprioception, control, and range of motion to ensure accurate visualization of progress over time using high-resolution data.</p>
+              <button class="btn-more">
+                <div class="more-icon"><img src="./assets/images/icon_plus.svg" alt="더보기" class="icon-img"></div>
+                <span class="text">Explore details</span>
+              </button>
+            </div>
+            <div class="video-wrap">
+              <video src="./assets/videos/reason2.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="content">
+            <div class="text-wrap">
+              <strong class="title split-wrap">
+                <span class="split-hidden">
+                  <span class="split-text">Make rehab</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">engaging and</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">fun</span>
+                </span>
+              </strong>
+              <p class="more-text">Experience recovery in an entirely new way using Tenzr gameplay. Stay motivated while completing rehab exercises by competing for your own high score.</p>
+              <button class="btn-more">
+                <div class="more-icon"><img src="./assets/images/icon_plus.svg" alt="더보기" class="icon-img"></div>
+                <span class="text">Explore details</span>
+              </button>
+            </div>
+            <div class="video-wrap">
+              <video src="./assets/videos/reason3.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="content reverse">
+            <div class="text-wrap">
+              <strong class="title split-wrap">
+                <span class="split-hidden">
+                  <span class="split-text">Guide the</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">journey to full</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">recovery</span>
+                </span>
+              </strong>
+              <p class="more-text">Completing your at-home physiotherapy exercise has never been easier. With the guidance of Tenzr, you can know exactly where you are in your recovery and find certainty you are moving correctly. Most clients make a full recovery within 3 months!</p>
+              <button class="btn-more">
+                <div class="more-icon"><img src="./assets/images/icon_plus.svg" alt="더보기" class="icon-img"></div>
+                <span class="text">Explore details</span>
+              </button>
+            </div>
+            <div class="video-wrap">
+              <video src="./assets/videos/reason4.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-player">
+        <h2 class="blind">play video</h2>
+        <div class="video-wrap">
+          <video src="./assets/videos/video.mp4" autoplay muted loop class="player-video"></video>
+          <button class="btn-play">
+            <img src="./assets/images/play.svg" alt="동영상재생">
+          </button>
+          <div class="video-control">
+            <video src="./assets/videos/player_video_con.mp4" controls class="player-video-control"></video>
+          </div>
+        </div>
+      </section>
+      <section class="sc-photo">
+        <h2 class="blind">photo</h2>
+        <div class="inner">
+          <div class="img-wrap">
+            <img src="./assets/images/visual2.jpg" alt class="photo-img">
+          </div>
+        </div>
+      </section>
+      <section class="sc-review">
+        <div class="inner">
+          <div class="review-top">
+            <span class="title">Testimonials</span>
+            <h2 class="headline split-wrap">
+              <span class="split-hidden">
+                <span class="split-text">Backed by leading</span>
+              </span>
+              <span class="split-hidden">
+                <span class="split-text">research, loved by real</span>
+              </span>
+              <span class="split-hidden">
+                <span class="split-text">people.</span>
+              </span>
+            </h2>
+          </div>
+          <div class="review-bottom">
+            <ul class="review-list">
+              <li class="review-item bg">
+                <a href="" class="review-link">
+                  <div class="img-wrap">
+                    <img src="./assets/images/review1.svg" alt class="logo-img">
+                  </div>
+                  <div class="more">
+                    <i class="ic-plus"><span class="blind">더보기</span></i>
+                    <div class="text-wrap">
+                      <span class="text">Donna C.</span>
+                      <span class="text">Carpal Tunnel</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="review-item full">
+                <a href="" class="review-link">
+                  <div class="img-wrap">
+                    <img src="./assets/images/review2.jpg" alt class="full-img">
+                  </div>
+                  <div class="more">
+                    <i class="ic-plus"><span class="blind">더보기</span></i>
+                    <div class="text-wrap">
+                      <span class="text">Sid Raddalgoda (PT, CHT)</span>
+                      <span class="text">WestSide Hand Clinic</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="review-item bg">
+                <a href="" class="review-link">
+                  <div class="img-wrap">
+                    <img src="./assets/images/review3.svg" alt class="logo-img">
+                  </div>
+                  <div class="more">
+                    <i class="ic-plus"><span class="blind">더보기</span></i>
+                    <div class="text-wrap">
+                      <span class="text">John D.</span>
+                      <span class="text">Tennis Elbow</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="review-item full">
+                <a href="" class="review-link">
+                  <div class="img-wrap">
+                    <img src="./assets/images/review4.jpg" alt class="full-img">
+                  </div>
+                  <div class="more">
+                    <i class="ic-plus"><span class="blind">더보기</span></i>
+                    <div class="text-wrap">
+                      <span class="text">Jeffrey Yao MD.</span>
+                      <span class="text">Stanford Medical</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sc-about">
+        <div class="inner">
+          <div class="about-top">
+            <h2 class="headline split-wrap">
+              <span class="split-hidden">
+                <span class="split-text">We are taking rehab</span>
+              </span>
+              <span class="split-hidden">
+                <span class="split-text">science to the next</span>
+              </span>
+              <span class="split-hidden">
+                <span class="split-text">level.</span>
+              </span>
+            </h2>
+          </div>
+          <div class="about-bottom">
+            <span class="guide-text">Get expert guidance</span>
+            <p class="desc">Playing 15 minutes of Tenzr rehab games teaches clients how to move correctly and measures recovery to guide treatment planning to ensure the fullest possible recovery.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sc-client">
+        <div class="inner">
+          <ul class="client-list">
+            <li class="client-item">
+              <img src="./assets/images/client1.jpg" alt="provider" class="client-img">
+              <a href="" class="client-link go-link">
+                <span class="link-text-wrapper hidden">
+                  <span class="link-text over">I'm a provider</span>
+                  <span class="link-text under">I'm a provider</span>
+                </span>
+              </a>
+            </li>
+            <li class="client-item move">
+              <img src="./assets/images/client2.jpg" alt="patient" class="client-img">
+              <a href="" class="client-link go-link">
+                <span class="link-text-wrapper hidden">
+                  <span class="link-text over">I'm a patient</span>
+                  <span class="link-text under">I'm a patient</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sc-motivation">
+        <div class="inner">
+          <h2 class="headline split-wrap">
+            <span class="split-hidden"><span class="split-text">Unlimited therapy</span></span>
+            <span class="split-hidden"><span class="split-text">starting here.</span></span>
+          </h2>
+          <span class="text">Motivation included.</span>
+          <div class="img-wrap">
+            <img src="./assets/images/motivation.jpg" alt class="motivation-img">
+          </div>
+        </div>
+      </section>
+      <section class="sc-service">
+        <h2 class="blind">service packages</h2>
+        <div class="inner">
+          <p class="desc">We offer 4 service packages, all designed to improve rehab outcomes, no matter where you're at in your journey.</p>
+          <a href="" class="go-link">
+            <span class="link-text-wrapper hidden">
+              <span class="link-text over">See plans</span>
+              <span class="link-text under">See plans</span>
+            </span>
+          </a>
+        </div>
+      </section>
+      <section class="sc-ready">
+        <div class="inner">
+          <div class="img-wrap">
+            <img src="./assets/images/ready.jpg" alt class="ready-img">
+            <div class="text-wrap">
+              <h2 class="headline split-wrap">
+                <span class="split-hidden">
+                  <span class="split-text">Ready</span>
+                </span>
+                <span class="split-hidden">
+                  <span class="split-text">to level up?</span>
+                </span>
+              </h2>
+              <a href="" class="go-link">
+                <span class="link-text-wrapper hidden">
+                  <span class="link-text over">Start now</span>
+                  <span class="link-text under">Start now</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer-top">
+          <p class="desc">Receive the latest news about our journey</p>
+          <a href="" class="sign-link" id="sign-link">
+            <span class="link-text">Sign up for newsletter</span>
+            <div class="link-bg"></div>
+            <svg class="border-circ one" width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="44.5" cy="44.5" r="44" stroke="black" style="stroke: rgb(220, 211, 247);"></circle>
+            </svg>
+            <svg class="border-circ two" width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="44.5" cy="44.5" r="44" stroke="#2B7669"></circle>
+            </svg>
+            <div id="footer-lottie"></div>
+          </a>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-logo">
+            <img src="./assets/images/logo.svg" alt="footer tenzr">
+          </h2>
+          <div class="link-wrap">
+            <div class="link-box">
+              <a href="" class="footer-link">For providers</a>
+              <a href="" class="footer-link">For patients</a>
+              <a href="" class="footer-link">Our plans</a>
+              <a href="" class="footer-link">Modules</a>
+              <a href="" class="footer-link">Test Modular</a>
+            </div>
+            <div class="link-box">
+              <a href="" class="footer-link">Contact us</a>
+              <a href="" class="footer-link">Youtube</a>
+              <a href="" class="footer-link">Facebook</a>
+              <a href="" class="footer-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="corp-list">
+            <li class="corp-item">©2021 Tenzr. All Rights Reserved.</li>
+            <li class="corp-item"><a href="" class="corp-link">Privacy policy</a></li>
+            <li class="corp-item"><a href="" class="corp-link">Terms of service</a></li>
+          </ul>
+          <a href="" class="offer-link">Powered by Oui Will Accelerator</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

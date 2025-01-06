@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'MatterII';
+  src: url("../fonts/MatterII-LightXH.woff2") format("woff2"),url("../fonts/MatterII-LightXH.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MatterII';
+  src: url("../fonts/MatterII-RegularXH.woff2") format("woff2"),url("../fonts/MatterII-RegularXH.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "MatterII", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1e1c21;
+  background: #fbfbfb;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+}
+.loading .loading-bg {
+  width: 100%;
+  height: 100%;
+  background: #dcd3f7;
+}
+.loading .content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0 80px;
+}
+.loading .content .simbol {
+  margin-right: 80px;
+  opacity: 0;
+  transition: all 1s;
+}
+.loading .content .text-wrap {
+  position: relative;
+}
+.loading .content .text-wrap .text-hidden {
+  overflow: hidden;
+}
+.loading .content .text-wrap .text-hidden:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.loading .content .text-wrap .text {
+  display: block;
+  font-size: 100px;
+  font-weight: 300;
+  transform: translateY(100%);
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.go-link {
+  display: inline-flex;
+  align-items: center;
+  height: 66px;
+  border-radius: 32px;
+  background: #2b7669;
+  color: #fbfbfb;
+}
+.go-link .hidden {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.go-link .link-text {
+  display: block;
+  transition: transform .5s cubic-bezier(0.9, 0, 0.1, 1);
+}
+.go-link  .link-text.under {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+.go-link:hover .link-text.over {
+  transform: translateY(-100%);
+}
+.go-link:hover .link-text.under {
+  transform: translateY(0);
+}
+
+.split-hidden, .hidden {
+  display: block;
+  overflow: hidden;
+}
+.split-hidden, .split-text {
+  display: block;
+}
+.headline .split-text {
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  margin-top: -0.2em;
+}
+
+.pin-spacer, .sc-intro {
+  width: calc(100vw - 17px)  !important;
+}
