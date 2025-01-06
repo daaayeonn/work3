@@ -262,7 +262,6 @@
 .sc-player .video-wrap .btn-play {
   position: absolute;
   transform: translate(-50%, -50%) scale(0);
-  transition: all 0.1s;
 }
 .sc-player .video-wrap .video-control {
   display: none;
