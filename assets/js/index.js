@@ -134,7 +134,7 @@ let imgEl = ``;
 for (let i = 0; i < totalImg + 1; i++) {
   first = (i === 0) ? "curr":"";
 
-  imgEl += `<img src="/assets/images/i_${i.toString().padStart(3, '0')}.png" alt class="${first}"></img>`
+  imgEl += `<img src="./assets/images/i_${i.toString().padStart(3, '0')}.png" alt class="${first}"></img>`
 }
 
 $('.sc-intro .sequence .sequence-images').html(imgEl);
