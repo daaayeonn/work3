@@ -118,5 +118,5 @@ body {
 }
 
 .pin-spacer, .sc-intro {
-  width: calc(100vw - 17px)  !important;
+  width: calc(100vw - 0.89vw)  !important;
 }

@@ -104,9 +104,9 @@
   bottom: 0;
   left: 1.6vw;
   width: 60vw;
-  /* transform: translate(0, -8%); */
 }
 .sc-intro .content .img-wrap .hand-img {
+  width: 100%;
   transform: scale(1.2);
   transform-origin: 0 100%;
 }
